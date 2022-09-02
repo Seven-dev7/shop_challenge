@@ -1,24 +1,26 @@
-# README
+# SHOP CHALLENGE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Description
+Display every days wich its slots.
+The current day in first position and bold.
+When day has no slots corresponding it's gonna write 'fermé'.
 
-Things you may want to cover:
+#### Ruby version
+Ruby : 3.0.3.
+Rails : 7.0.3.
+db: pg.
+framework css: Bootstrap.
+Rspec.
 
-* Ruby version
+#### Configuration
+``` git clone git@github.com:Seven-dev7/shop_challenge.git ```.
+``` cd shop_challenge ```.
+``` bundle i ```.
+``` rails db:create db:migrate db:seed ```.
 
-* System dependencies
+``` rails s ``` to launch server.
 
-* Configuration
+open navigator and go to http://localhost:3000/.
 
-* Database creation
+``` rspec``` to launch specs
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
