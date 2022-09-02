@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_02_154732) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_02_155725) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +26,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_154732) do
     t.integer "week_day", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "shop_id", null: false
+    t.index ["shop_id"], name: "index_slots_on_shop_id"
   end
 
+  add_foreign_key "slots", "shops"
 end
