@@ -5,5 +5,6 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find_by(id: params[:id])
+    @days = WeekDays.new.order
   end
 end
