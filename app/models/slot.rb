@@ -13,6 +13,14 @@ class Slot < ApplicationRecord
     sunday: 6
   }
 
+  def formatted_start_time
+    start_time.to_formatted_s(:time)
+  end
+
+  def formatted_end_time
+    end_time.to_formatted_s(:time)
+  end
+
   private
 
   def end_time_after_start_time

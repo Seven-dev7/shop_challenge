@@ -6,3 +6,11 @@ en:
           attributes:
             end_time: 
               after_start_time: "End time must be after Start time"
+  days:
+    monday: "Monday"
+    tuesday: "Tuesday"
+    wednesday: "Wednesday"
+    thursday: "Thursday"
+    friday: "Friday"
+    saturday: "Saturday"
+    sunday: "Sunday"

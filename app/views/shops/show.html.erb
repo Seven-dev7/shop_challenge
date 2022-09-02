@@ -4,6 +4,19 @@
       <div class="d-flex align-items-start justify-content-center">
         <div class="fw-bold">Horaires :&nbsp;</div>
         <div>
+          <% @days.each do |day| %>
+            <p class="<%= 'fw-bold' if day == Time.zone.now.strftime('%A') %>">
+              <%= I18n.t "days.#{day.downcase}" %> :
+              <% if @shop_slots[day.downcase] %>
+                <% @shop_slots[day.downcase].each do |slot| %>
+                  <%= slot.formatted_start_time %> -
+                  <%= slot.formatted_end_time %>,
+                <% end %>
+              <% else %>
+                Fermé
+              <% end %>
+            </p>
+          <% end %>
         </div>
       </div>
   </div>

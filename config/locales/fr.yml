@@ -6,3 +6,11 @@ fr:
           attributes:
             end_time: 
               after_start_time: "L'heure de fin doit être apres l'heure de début"
+  days:
+    monday: "Lundi"
+    tuesday: "Mardi"
+    wednesday: "Mercredi"
+    thursday: "Jeudi"
+    friday: "Vendredi"
+    saturday: "Samedi"
+    sunday: "Dimanche"
