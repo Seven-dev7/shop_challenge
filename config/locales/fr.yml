@@ -1,8 +1,8 @@
-en:
+fr:
   activerecord:
     errors:
       models:
         slot:
           attributes:
             end_time: 
-              after_start_time: "End time must be after Start time"
+              after_start_time: "L'heure de fin doit être apres l'heure de début"
